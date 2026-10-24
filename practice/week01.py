@@ -14,7 +14,11 @@ def count_vowels(text):
     count_vowels("Data Structures") -> 5
     count_vowels("rhythm")          -> 0
     """
-    raise NotImplementedError
+    count = 0
+    for ch in text.lower():
+        if ch in "aeiou":
+            count += 1
+    return count
 
 
 def second_largest(values):
